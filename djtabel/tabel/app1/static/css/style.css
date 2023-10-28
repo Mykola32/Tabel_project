@@ -1,0 +1,376 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { 
+    margin: 0;
+    font-family: sans-serif;
+}
+/* Start header */
+
+header { 
+    height: 600px;
+    
+    background: url(../img/car_main.jpg) no-repeat fixed center; 
+    overflow: hidden;
+}
+
+h1 { color: #fff;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 3px #fff;
+    
+}
+
+.logo { 
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.logoimg {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav { 
+    height: 100px;
+    
+    width:100%;
+    padding: 10px 40px;
+    background-color: #1b8a6adc;
+    color: #fff;
+    position: fixed;
+}
+
+nav ul { 
+    float: right;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a { 
+    color: #fff;
+    text-decoration: none;
+}
+
+nava:hover { text-decoration: none; }
+
+/* End header */
+
+.video{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.LogoWrapper {
+	display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+img {
+	max-width: 100%;
+    align-self: center;
+}
+
+section { 
+    padding-bottom: 3px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 { 
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #1b8a6adc;
+    text-align: center;
+}
+
+h3 { 
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #1b8a6adc;
+    text-align: center;
+}
+p {
+    font-size: 20px; 
+}
+
+.team {
+    display: inline-block;
+    width: 33.5%;
+    min-width: 310px;
+    margin-left: 10%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    background-color: #4e4e4e;
+    color: #fff;
+    padding: 40px;
+    vertical-align: top;
+    border-radius: 15px;
+    box-shadow: 016px24px2pxrgba(0, 0, 0, 0.14),
+                06px30px5pxrgba(0, 0, 0, 0.12),
+                08px10px-5pxrgba(0, 0, 0, 0.2);
+}
+
+.team-center{
+    display: inline-block;
+    width: 33.5%;
+    min-width: 310px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 2%;
+    /* background-color: #4e4e4e; */
+    color: #fff;
+    padding: 40px;
+    vertical-align: top;
+    border-radius: 15px;
+    box-shadow: 016px24px2pxrgba(0, 0, 0, 0.14),
+                06px30px5pxrgba(0, 0, 0, 0.12),
+                08px10px-5pxrgba(0, 0, 0, 0.2);
+
+}
+
+.contacts{
+    color: white;
+    
+    
+   
+}
+
+.contacts-black{
+    color: black;
+    /* padding-left: 13%; */
+    text-align: center;
+   
+}
+
+.team:last-child { margin-right: 0; }
+
+.teamh3 { 
+    text-align: center;
+    margin: 10px 40px 50px 20px;
+}
+
+.icon { 
+    float: right;
+    margin-right: -15px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-top: 15px;
+    background-image: linear-gradient(#ccc, #fff);
+}
+
+.circle-back {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: linear-gradient(#ff0, #ffba00);
+    box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.14);
+}
+
+.team:nth-of-type(2) .circle-back {
+    background-image: linear-gradient(#ff7c7c, #db3811);
+}
+
+.team:nth-of-type(3) .circle-back {
+    background-image: linear-gradient(#21e6d1, #08a392);
+}
+
+.team:nth-of-type(4) .circle-back {
+    background-image: linear-gradient(#be75f4, #7d1fc3);
+}
+
+.review { 
+    display: inline-block;
+    width: 45%;
+    min-width: 350px;
+    
+    margin-left: 3%;
+    margin-right: 3%;
+    background: #fff;
+    box-shadow: 02px 2px 0 rgba(0, 0, 0, 0.14),
+                03px 1px -2p xrgba(0, 0, 0, 0.2),
+                01px 5px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 30px 45px 0;
+    text-align: center;
+}
+
+.review:last-of-type { margin-right: 0; }
+
+.review:before { 
+    font-size: 24px;
+    content: url(../images/icons/quots.svg);
+}
+
+.author { font-weight: bold; }
+
+.author-img { 
+    display: flex;
+    justify-content: space-between;
+    width: 202px;
+    overflow: hidden;
+    border-radius: 10%;
+    margin: auto;
+    box-shadow: 016px 38px -12px rgba(0, 0, 0, 0.56),
+                04px 25px 0px rgba(0, 0, 0, 0.12),
+                08px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.img1{
+    max-width: 570px;
+    width: auto;
+    min-width: 300px;
+}
+
+.img2{
+    width: 205px;
+}
+
+.author-img img { 
+    
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left:10px;
+    text-decoration: none;
+    
+    
+
+}
+
+.button_1{
+    background-color: red;
+    color: white;
+    height: 30px;
+    padding: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+}
+
+.button_1:hover{
+    background-color: rgb(226, 91, 91);
+    cursor:pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2)
+}
+
+/* Program start */
+.program-inner{
+    margin-top: 1%;
+    /* height:1380px;
+    overflow-y: scroll;  */
+}
+
+
+
+.MethodWrapper li {
+	text-align: center;
+	padding: 0.2rem 0;
+    font-size: 30px; 
+}
+
+.MethodWrapper li::marker {
+     content: "" 
+     /* змінюємо маркери списку на квадрати "\25A0"; змінюємо маркери списку на квадрати */ 
+}
+
+.MethodWrapper li:after {
+	text-align: center;
+	content: "✼";
+	display: block;
+	text-align: center;
+	margin: 0rem 0 0.1rem 0;
+	color: #eee;
+}
+
+.IntroText {
+	font-size: 1.8rem;
+	font-style: italic;
+    
+}
+
+.program-innerh3{
+    position: sticky;
+    top:0;
+    background-color:#fcc068;
+    color:#fff;
+    margin-top:0;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+.program-innerh3:nth-of-type(3n-1){
+    background-color:#24ad64;
+}
+
+.program-innerh3:nth-of-type(3n){
+    background-color:#8026c1;
+}
+
+.alignright{
+    float: right;
+    border-radius:6px;
+    padding-left: 1%;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    max-width:850px;
+    
+    min-width: 350px;
+   
+    box-shadow:016px 24px 2px rgba(0, 0, 0, 0.14), 
+               06px 30px 5px rgba(0,0,0,0.12),
+               08px 10px -5px rgba(0,0,0,0.2); 
+}
+
+.photo{
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 10%;
+    
+}
+
+.clear{ clear: both; }
+
+
+/* Program finish */
+
+
+
+footer {
+    width: 70%;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px0;
+    border-top: 1px solid #ccc;
+}
