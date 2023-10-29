@@ -374,3 +374,19 @@ footer {
     padding: 20px0;
     border-top: 1px solid #ccc;
 }
+/*css for table*/
+table,th,td{
+  border: 1px solid grey;
+  text-align:center;
+  font-size:10px;
+}
+select {
+    font-size:10px;
+}
+th,td{
+   padding:1px;
+}
+caption{
+  font-size:10px;
+  color:blue;
+}

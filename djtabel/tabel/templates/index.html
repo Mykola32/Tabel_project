@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Компанія Миттєва-логістика</title>
-    <link rel="stylesheet" href="./css/style.css">
+<!--    <link rel="stylesheet" href="./css/style.css">-->
 </head>
 <body>
-    
 
+    {% block header %}
     <header>
         <nav>
             <div class="logo" align = "center">
@@ -21,7 +21,8 @@
                     <li><a href="#program" class = "contacts"><p>Партнерство</p></a></li>
                     <li><a href="#poslugi" class = "contacts"><p>Послуги</p></a></li>
                     <li><a href="#teams" class = "contacts"><p>Фото галерея</p></a></li>
-                   
+                    <li><a href="{% url 'logforma' %}" class = "contacts"><p>Зробити замовлення</p></a></li>
+
                     
                    
                     
@@ -37,7 +38,7 @@
        
         
     </header>
-   
+   {% endblock %}
     
 
 <main class="wrap">
@@ -155,8 +156,8 @@
                 <p></p>
                 <div class="author">8-9 November 2022, Kharkiv, Ukraine</div>
                 <p></p>
-                <button class="button_1">   
-                    <a class = "button_1" download href="./doc/Workshop_BOOK_2022.pdf" target="_blank">Замовлення:  Міжнародні перевезення</a>
+                <button class="button_1">
+                    <a class = "button_1" href="{% url 'logforma' %}" target="_blank">Зробити замовлення</a>
                 </button>
                 <p></p>
                 <div class="author-img">

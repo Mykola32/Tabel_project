@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <title>Замовлення доставки</title>
+</head>
+<body>
+<button class="button_1">
+    <a class = "button_1" href="{% url 'index' %}" >Повернутися у головне меню</a>
+</button>
+
+<h2>This is Form project</h2>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><input type="submit" value="Замовити"></p>
+</form>
+
+
+</body>
+</html>
