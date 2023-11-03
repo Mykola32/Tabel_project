@@ -1,9 +1,9 @@
 from django import forms
 
 class FormBuyer(forms.Form):
-    t_del = (('1', 'вантажівка'),
-             ('2', 'дрон'),
-             ('3', 'авіа'))
+    t_del = (('вантажівка', 'вантажівка'),
+             ('дрон', 'дрон'),
+             ('авіа', 'авіа'))
     distance = forms.FloatField(label='Відстань, км:')
     type_delivery = forms.ChoiceField(choices=t_del, label='Вибір:')
     masa = forms.FloatField(label='Маса вантажу, кг:')

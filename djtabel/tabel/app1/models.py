@@ -9,3 +9,7 @@ class LogisticInfo(models.Model):
     pib = models.CharField(max_length=50, blank=False)
     phone = models.CharField(max_length=13, blank=False)
     email = models.EmailField(max_length=30,blank=False)
+
+class TextFile(models.Model):
+    file = models.FileField('Текстовий файл', null=True)
+    text_date = models.DateTimeField("Дата створення файлу")
