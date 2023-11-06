@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компанія Миттєва-логістика</title>
+<!--    <link rel="stylesheet" href="./css/style.css">-->
+</head>
+<body>
+
+    {% block header %}
+    <header>
+        <nav>
+            <div class="logo" align = "center">
+                <ul > 
+                    
+                    
+                    <li><a href="#about" class = "contacts"><p>Про компанію</p></a></li>
+                    <li><a href="#program" class = "contacts"><p>Партнерство</p></a></li>
+                    <li><a href="#poslugi" class = "contacts"><p>Послуги</p></a></li>
+                    <li><a href="#teams" class = "contacts"><p>Фото галерея</p></a></li>
+                    <li><a href="{% url 'logforma' %}" class = "contacts"><p>Зробити замовлення</p></a></li>
+
+                    
+                   
+                    
+                </ul>
+                <!-- <p>B. Verkin Institute for Low-Temperature Physics and Engineering of NAS of Ukraine</p> -->
+                
+                
+                
+            </div>
+            
+        </nav>
+        <h1></h1>
+       
+        
+    </header>
+   {% endblock %}
+    
+
+<main class="wrap">
+    <section id="about">
+        <p align = "center"  >
+            <a  href="{% url 'logforma' %}" target="_blank"><img src="{% static '/img/FTINT_logo.jpg' %}" width="11%"  alt="Logo"> </a>
+            <a  href="{% url 'logforma' %}" target="_blank"><img src="{% static '/img/NDFU_logo_3.jpg' %}" width="16%"  alt="Logo"> </a>
+            <a  href="{% url 'logforma' %}" target="_blank"><img src="{% static '/img/logo_NASU.JPG' %}" width="16.5%"  alt="Logo"> </a>
+            <img src="{% static '/img/workshop_logo_initial_IMG_7814.PNG' %}" alt="ThermalConductivityWorkshop" width="16.5%">
+        </p>
+        <h3>Компанія "Митева-логістика"</h3>     
+        
+        <p align = "justify">Компанія "Митева-логістика" надає клієнтам — як бізнесу, так і приватним особам — повний спектр логістичних та 
+            пов'язаних з ними послуг. Компанія має партерство з групою як українських так і міжнародних логістичних груп, зокрема Нова пошта, 
+            Укрпошта, АліЕкспресс, Алібаба, Амазон, NovaPay, Nova Global, Nova Post у Молдові, Литві, Польщі, Чехії, Румунії, Німеччині, 
+            а також авіакомпанія Supernova Airlines.
+        </p>
+
+        <p align = "justify">    Компанія "Митева-логістика" — це компанія з експрес-доставки, заснована у 2021 року. 
+            Її мета — забезпечувати легку доставку для кожного клієнта — до відділення, поштомату або за адресою. Компанія надає логістичні 
+            та дистрибуційні послуги, доставляючи як документи та найдрібніші посилки, так і великі вантажі. 
+            Завдяки "Митева-логістика" тисячі підприємців можуть створювати та розвивати свій бізнес не тільки в Україні, а й за кордоном.
+            
+            В Україні компанія має найдоступнішу мережу для клієнтів: 10000 відділень по всій Україні та 24000 поштоматів, 
+            а кількість відправлень за 2022 рік, попри повномасштабну війну, склала 15 млн посилок та вантажів. 
+            Система доставки посилок за допомогою квадрокоптерів - сутево скорочує логістичні витрати - та робить нашу компанію лідером 
+            на ринку митевих доставок в межах міста. 
+		</p>
+    </section>
+    
+  
+  
+    <section id="reviews">
+        <h3>Історія компанії:</h3>
+
+        <div class="video" id ="video_ILTPE">
+            <h3>"Митева-логістика": Muteva Global in 2022 </h3>
+            <p align = "justify">Muteva Global це лінійка продуктів компанії які пропонують клієнтам логістичні рішення у сфері глобальної доставки, 
+                щоб допомагати українцям та бізнесу доставляти товари по всьому світу навіть в умовах війни</p>
+            <p align = "justify"> Один з найпопулярніших наних продуктів — сервіс Muteva Shopping. Він дозволяє українцям купувати речі, косметику, 
+                засоби догляду та будь-які інші товари 
+                в інтернет-магазинах Європи та США, де немає прямої доставки в Україну, з доставкою у відділення, поштомати "Митева-логістика" пошти 
+                або навіть на свою адресу, що актуально у випадку людей з обмеженою рухливістю. В цьому випадку ми можемо доставити товар до вашого дому за допомогою дронів в межах  будь-якого міста 
+                та передмістя до 15 км.</p>
+            <p align = "center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/98BIu9dpwHU?si=SOO2oJnIp3FtgEBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </p>    
+
+        </div>
+
+        <div class="review">
+            <h3>1<sup>st</sup> Dron Muteva Global - Що таке автономна митева доставка?</h3>
+            <p align = "justify">Скористайтесь можливостями від нашої компанії, зкрема лінійкою продуктів 1<sup>st</sup> Dron Muteva Global по 
+                пересуванню своїх замовлених товарів з інтернет магазину від місцевого дистриб’юторського центру до 
+                ваших вхідних дверей або замовлення суші, 
+                яке здійснюється митева від кількох кліків замовлення в нашому додатку до вашого кухонного столу. </p>
+                    
+            <p align = "justify">У сучасних суспільствах логістика – спосіб як ці мільярди посилок пересуваються від пункту А до пункту В, є об’єктом масових 
+                інвестицій і автомізації.  “Автономна доставка” означає безпілотні транспортні засоби, які підберуть товар і віддадуть його. 
+                Сюди можна віднести чи то автономних роботів, які доставляють 
+                посилки від FedEx чи дрони, що можуть принести ліки  або обіди до наших дверей через декілька хвилин після того, як ви розмістили замовлення.</b></p>
+            <p align = "justify">Нажимайте на кнопку замовлення.</p>
+            
+            <p></p>
+            
+            <div class="author-img img1">
+                <a href="{% url 'logforma' %}"  target="_blank"><img src="{% static '/img/FinishPhoto_1.jpg' %}" alt=" Dron Muteva Global"> </a>
+              
+                
+            </div>
+            
+            
+            <p></p>
+            <div class="author">8 June 2021, Kharkiv, Ukraine - first dron transportation</div>
+            <p></p>
+           
+            
+            <button class="button_1"> 
+                <a class = "button_1" href="{% url 'logforma' %}" target="_blank"> Замовлення: Dron Muteva Global</a>
+                
+            </button>
+
+            <div class="author-img">
+                <p></p>
+                 <!-- <a href="https://nrfu.org.ua/en/" target="_blank"><img src="{% static '/img/NDFU_logo_large.jpg' %}" alt="NDFU_logo"></a>   -->
+                
+            </div>
+            
+        </div>
+            <div class="review">
+                <h3>2<sup>nd</sup> SuperMuteva Airlines</h3>
+                
+               
+                <p align = "justify"> У 2022 році компанія заснувала авіакомпанію SuperMuteva Airlines, щоб гарантувати швидкі терміни доставки своїм клієнтам 
+                    із будь-якої точки світу. Авіакомпанія стала другою в Україні, яка отримала сертифікат експлуатанта під час війни. 
+                    Перший рейс за маршрутом Рига-Львів відбувся у травні 2023 року, зараз компанія літає цим маршрутом двічі на тиждень
+                     у партнерстві з компанією RAF-Avia. 
+                    Паралельно SuperMuteva Airlines шукає можливості залучення до свого флоту літаків більшого розміру для здійснення трансконтинентальних рейсів.. 
+                </p>
+                <p align = "justify"> Для того, щоб клієнти на закордонних ринках могли користуватись зручними та швидкими сервісами "Митева-логістика"
+                     так само 
+                    як і в Україні, ми розробили програмне забезпечення для цифрового управління логістичним бізнесом за кордоном. 
+                    Це система Shipment, мультиплатформенне рішення для кожного сегмента бізнесу — відділення, термінала, адресної доставки, 
+                    офісу підтримки. Shipment є багатомовним і буде працювати у будь-якій країні,
+                     куди зайде "Митева-логістика". На її базі працюють також мобільний додаток та бізнес-кабінет, 
+                     які вже доступні для клієнтів у країнаї ЕС, зокрема Польщі...</p>
+                
+                
+                <p align = "justify">"Митева-логістика" не лише забезпечує сучасними логістичними послугами, а і є соціально відповідальним корпоративним громадянином своєї країни. 
+                    Компанія щорічно реалізує низку соціальних та екологічних проєктів для українців.</p>
+                <div class="author-img img2">
+                    <a href="{% url 'logforma' %}" target="_blank"><img src="{% static '/img/m_ltp_2023_49_issue_5.jpeg' %}" alt="Low. Temp. Phys.">Замовлення послуг</a>
+                </div>
+                <p></p>
+                <div class="author">8-9 November 2022, Kharkiv, Ukraine</div>
+                <p></p>
+                <button class="button_1">
+                <a class = "button_1" href="{% url 'logforma' %}" target="_blank"> Замовлення: Muteva Global</a>
+
+                </button>
+
+                <p></p>
+                <div class="author-img">
+                    <p></p>
+                     <!-- <a href="https://nrfu.org.ua/en/" target="_blank"><img src="{% static '/img/NDFU_logo_large.jpg' %}" alt="NDFU_logo"></a>   -->
+                    
+                </div>
+            </div>
+           
+    </section>
+    <section id="reviews"> </section>
+    
+    <section id="program">
+        <h2>Місія компанії</h2>
+        <img src=".{% static '/img/workshop_logo_initial_IMG_7814.PNG' %}" alt="ThermalConductivityWorkshop" class="alignright" width="25%" min-width="5%">
+        <br>
+        <p align = "justify" class="IntroText">Місія компанії — легкість доставки для життя і бізнесу. Для цього команда "Митева-логістика" впроваджує 
+            нові продукти та сервіси, 
+            орієнтуючись на міжнародні стандарти й найкращий світовий досвід.</p>
+        <div class="clear"></div>
+        <br>
+        <div class="program-inner">
+            <h3>Партнерство:</h3>
+            <ul>
+			    <li><p align = "justify">
+                    Запрошуємо до співпраці тих, хто бажає розвивати власний бізнес та партнерську мережу "Митева-логістика". 
+                    Ви можете відкрити представництво "Митева-логістика" або встановити поштомат у будь-якому населеному пункті та отримувати додатковий 
+                    дохід. Зі свого боку ми гарантуємо вам підтримку, 
+                    навчання та вигідні умови співпраці. Будемо раді бачити вас серед лідерів партнерської мережі "Митева-логістика", 
+                    яка нараховує більше 7700 відділень.
+
+                    </p>
+                </li> 
+                
+                <li>
+                    <p>Партнер отримає: <strong>Запуск бізнесу «під ключ» від 2 тижнів</strong>.</p>
+                </li>
+               
+                <li>
+                    <p>Для початку співпраці потрібен: <strong>Дозвіл на здійснення підприємницької діяльності</strong>.</p>
+                </li>
+                <li>
+                    <p>Обов'язки Партнера: <strong>Знаходить нових клієнтів і розвиває існуючу базу</strong> </p>
+                </li>
+                <li>
+                    <p align = "justify">Переваги співпраці:  <strong>Окупність інвестицій вже через 8 місяців</strong></p>
+                </li>
+                <li>
+                    <p align = "justify">Поштомати: <strong>Це зручний спосіб отримувати 
+                        та відправляти посилки для вас та ваших клієнтів. Додайте ще одну перевагу вашому бізнесу та приймайте ще більше відвідувачів.</strong></p>
+                </li>
+               
+                <li>
+                    <p align = "justify">Наші умови співпраці: <strong>Прозорі тарифи та гнучкі умови співпраці</strong>.</p>
+                </li>
+			   <li>
+                <p align = "justify">Договір оферти: <a href="/static/doc/Dogovir.pdf" download target="_blank">Договір Оферти</a>.</p>
+
+               </li>
+               <li>
+                <p> Залишити заявку на встановлення поштомату або відкритя відділення   <strong>можна: </strong>
+                    <button class="button_1">   
+                        <a class = "button_1" href="{% url 'logforma' %}" target="_blank">Віділ співпраці</a>
+                    </button>
+                    
+                    
+                
+           
+                </p>
+            </li>
+            </ul>
+            <p>
+
+            </p>
+            <p align = "center">
+                <img src="{% static '/img/Dostavka.jpg' %}" alt="Dostavka">
+            </p>
+           
+            
+           
+           
+            <h3 id="poslugi">Послуги доставки:</h3>
+            <ul class="MethodWrapper">
+                <li> 
+                    1. Міжнародні.
+                </li>
+                <li> 
+                    2. Між містами.
+                </li>
+                <li> 
+                    3. Вантажні перевезення.
+                </li>
+                <li> 
+                    4. Кур'єрська доставка.
+                </li>
+                <li> 
+                    5. До дверей - дроном перевезення.
+                </li>
+                
+            </ul>
+            <img src="{% static 'img/WorkshopPhoto.jpg' %}" alt="" class="alignright photo">
+            
+           
+            
+            <br>
+            
+            <p align = "justify" class="IntroText">Прийнявши рішення співпрацювати з мувінговою компанією «Митева-логістика», 
+                ви можете бути цілком впевненими в гнучких та доступних цінах. Замовляючи вантажні перевезення по Україні, 
+                ціни на них залежать від типу транспортного засобу та його грузовмісткості. 
+                Ми використовуємо лише сучасні нові вантажні автомобілі різного об’єму багажного відсіку. 
+                Завдяки цьому, Ви зможете замовити машину, котра задовільнить Ваші потреби та Вам не прийдеться переплачувати за неї. 
+                Наші кваліфіковані менеджери допоможуть підібрати оптимальній автомобіль, 
+                зважаючи на кількість та тип вантажу, котрий необхідно доставити..</p>
+            
+            <div class="clear"></div>
+            <h3>Фото:</h3>
+
+           
+            
+            <hr>
+            
+            <div class="clear"></div>
+            
+        </div>
+    </section>
+
+    <section id="teams">
+        <h3>Фото галерея:</h3>
+        <div class="team">
+            
+                <h3 class = "contacts">Перевозка матеріалів </h3>
+                <p align = "justify">
+                    <img src="{% static '/img/perevozka-materialov-1.jpg' %}" alt="mat1">
+                </p>
+        </div>
+
+        <div class="team">
+            
+                <h3 class = "contacts">Перевозка матеріалів </h3>
+                <p align = "justify">
+                    <img src="{% static '/img/perevozka-materialov-2.jpg' %}" alt="mat2">
+                </p>
+        </div>
+
+        <div class="team">
+            
+            <h3 class = "contacts">Перевозка матеріалів </h3>
+            <p align = "justify">
+                <img src="{% static '/img/perevozka-materialov-3.jpg' %}" alt="mat3">
+            </p>
+        </div>
+
+        <div class="team">
+            
+            <h3 class = "contacts">Робота відділення </h3>
+            <p align = "justify"> Робота відділення по даставці вантажів до 30 кг. Ми працюємо з 8 ранку до 20 вечора щодня, без вихідних. 
+                Співпрацюючи з нами ви можете бути впевнені що ваші посилки будут відправлені і доставлені вчастно в будь яку точку України 
+                чи Европи.
+                <img src="{% static '/img/images_nova.jpg' %}" alt="mat4" width="140%">
+            </p>
+        </div>
+        
+        
+        
+        
+    </section>
+
+
+    <footer>
+        
+        <p align = "center"  >
+            
+                <a  href="#" target="_blank"><img src="{% static '/img/FTINT_logo.jpg' %}" width="11%"  alt="Logo"> </a>
+                <a  href="#" target="_blank"><img src="{% static '/img/NDFU_logo_3.jpg' %}" width="16%"  alt="Logo"> </a>
+                <a  href="#" target="_blank"><img src="{% static '/img/logo_NASU.JPG' %}" width="16.5%"  alt="Logo"> </a>
+                <img src="{% static '/img/workshop_logo_initial_IMG_7814.PNG' %}" alt="ThermalConductivityWorkshop" width="16.5%">
+          
+            
+        </p>
+        <p>Official Web-site:<a href="#about" target="_blank"> Muteva Logistika</a></p>
+       
+        
+    </footer>
+</main>
+</body>
+</html>

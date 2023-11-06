@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення доставки</title>
+</head>
+<body>
+
+{% block header %}
+    <header>
+        <nav>
+            <div class="logo" align = "center">
+                <ul >
+
+
+                    <li><a href=" {% url 'index' %}#about" class = "contacts"><p>Про компанію_Головна</p></a></li>
+                    <li><a href=" {% url 'index' %}#program" class = "contacts"><p>Партнерство</p></a></li>
+                    <li><a href=" {% url 'index' %}#poslugi" class = "contacts"><p>Послуги</p></a></li>
+                    <li><a href=" {% url 'index' %}#teams" class = "contacts"><p>Фото галерея</p></a></li>
+                    <li><a href="{% url 'logforma' %}" class = "contacts"><p>Зробити замовлення</p></a></li>
+
+
+
+
+                </ul>
+                <!-- <p>B. Verkin Institute for Low-Temperature Physics and Engineering of NAS of Ukraine</p> -->
+
+
+
+            </div>
+
+        </nav>
+        <h1></h1>
+
+
+    </header>
+   {% endblock %}
+
+<section id="reviews">
+<div class="review">
+     <h3 >Послуги доставки:</h3>
+            <ul class="MethodWrapper">
+                <li>
+                    1. Міжнародні.
+                </li>
+                <li>
+                    2. Між містами.
+                </li>
+                <li>
+                    3. Вантажні перевезення.
+                </li>
+                <li>
+                    4. Кур'єрська доставка.
+                </li>
+                <li>
+                    5. До дверей - дроном перевезення.
+                </li>
+
+            </ul>
+
+</div>
+
+
+ <div class="review">
+     <h3  id="poslugi">Сформувати замовлення</h3>
+<form action="" method="POST" >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><input type="submit" value="Замовити" class="button_1"></p>
+</form>
+
+<!--<button class="button_1">-->
+<!--    <a class="button_1" href="{% url 'index' %}">Повернутися у головне меню</a>-->
+<!--</button>-->
+
+      <p align = "justify"> Наш менеджер зателефонує вам в наближчу годину після сформування вашої заявки. Деталі вашого замовлення  будуть
+        відправлені вам на Вашу поштову скриньку. Ви також зможете скачати договір оферти та інформацію про замовлення.</p>
+ </div>
+    <br>
+    <br>
+    <br>
+
+
+    </section>
+
+
+
+
+
+
+</body>
+</html>
